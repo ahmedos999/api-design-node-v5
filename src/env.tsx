@@ -1,3 +1,4 @@
+// @ts-ignore
 import { env as loadenv } from 'custom-env'
 import { z } from 'zod'
 

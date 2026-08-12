@@ -3,7 +3,8 @@ import authRoutes from './routes/authRoutes.ts'
 import userRoutes from './routes/userRoutes.ts'
 import habitRoutes from './routes/habitRoutes.ts'
 import cors from 'cors'
-import morgen from 'morgan'
+// @ts-ignore
+import morgan from 'morgan'
 import helmet from 'helmet'
 
 const app = express()
@@ -11,7 +12,7 @@ const app = express()
 // external middelware
 app.use(helmet())
 app.use(cors())
-app.use(morgen('dev'))
+app.use(morgan('dev'))
 
 // express middleware
 app.use(express.json())
